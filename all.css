@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3f5d45;
+  --secondary-color: #eaf0ed;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.nav .nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-bar ul {
+  display: flex;
+}
+.nav .nav-bar ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-bar ul li a {
+  width: 80px;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.nav .nav-bar ul li a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.nav .nav-bar .cart {
+  margin-left: 72px;
+  width: 24px;
+  height: 24px;
+}
+
+.banner {
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.main {
+  display: flex;
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.main .menu {
+  width: 440px;
+  padding-right: 24px;
+}
+.main .menu h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 16px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.main .menu ul li {
+  background-color: #fff;
+  border-bottom: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+}
+.main .menu ul li .last {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.main .menu ul li a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-color);
+}
+.main .menu ul li a:hover {
+  background-color: var(--secondary-color);
+}
+.main .goods {
+  width: 856px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .goods .good-item {
+  position: relative;
+  width: 416px;
+  height: 601px;
+  margin-bottom: 20px;
+}
+.main .goods .good-item .commodity {
+  width: 100%;
+  height: 486px;
+  display: block;
+}
+.main .goods .good-item .featured {
+  position: absolute;
+  display: flex;
+  width: 36px;
+  height: 106px;
+  background-color: var(--primary-color);
+  top: 0%;
+  left: 5%;
+}
+.main .goods .good-item .featured p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 13px 10px;
+}
+.main .goods .good-item .favorite {
+  position: absolute;
+  width: 24px;
+  height: 23px;
+  top: 3%;
+  right: 5%;
+}
+.main .goods .good-item .title {
+  display: flex;
+}
+.main .goods .good-item .title h3 {
+  width: 50%;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid var(--secondary-color);
+}
+.main .goods .good-item .title p {
+  width: 50%;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid var(--secondary-color);
+}
+.main .goods .good-item .add-cart a {
+  width: 100%;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 16px 90px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.page {
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.page ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.page ul li a {
+  border: 1px solid var(--secondary-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.page ul li a:hover {
+  background-color: var(--primary-color);
+  font-weight: 600;
+  color: #fff;
+}
+
+.search {
+  max-width: 1920px;
+  background-color: var(--primary-color);
+  padding: 32px 422px;
+  display: flex;
+  justify-content: space-between;
+}
+.search .logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search .logo-name p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer {
+  padding: 32px 422px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .contact .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer .contact .phone p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #3f5d45;
+}/*# sourceMappingURL=all.css.map */
